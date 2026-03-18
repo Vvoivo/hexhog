@@ -1,0 +1,31 @@
+[dependencies.proc-macro2]
+version = "1.0.74"
+
+[dependencies.quote]
+version = "1.0.35"
+
+[dependencies.syn]
+version = "2.0.87"
+
+[lib]
+path = "src/lib.rs"
+
+[package]
+authors = ["David Tolnay <dtolnay@gmail.com>"]
+autobenches = false
+autobins = false
+autoexamples = false
+autolib = false
+autotests = false
+description = "Implementation detail of the `thiserror` crate"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+name = "thiserror-impl"
+readme = false
+repository = "https://github.com/dtolnay/thiserror"
+rust-version = "1.61"
+version = "2.0.16"
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--generate-link-to-definition", "--extern-html-root-url=core=https://doc.rust-lang.org", "--extern-html-root-url=alloc=https://doc.rust-lang.org", "--extern-html-root-url=std=https://doc.rust-lang.org", "--extern-html-root-url=proc_macro=https://doc.rust-lang.org"]
+targets = ["x86_64-unknown-linux-gnu"]
